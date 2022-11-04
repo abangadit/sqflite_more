@@ -9,7 +9,7 @@ import 'package:tekartik_common_utils/common_utils_import.dart';
 String fixStatement(String sql) {
   sql = sql.trim();
   if (sql.endsWith(';')) {
-    return sql.substring(0, sql.length - 1);
+    //return sql.substring(0, sql.length - 1);
   }
   return sql;
 }
