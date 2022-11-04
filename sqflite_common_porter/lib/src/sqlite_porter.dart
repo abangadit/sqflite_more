@@ -57,7 +57,7 @@ Future<List<String>> dbExportSql(Database db) async {
             values.add("'${sanitizeText(value.toString())}'");
           }
         }
-        statements.add('INSERT INTO $table VALUES (${values.join(',')})');
+        statements.add('INSERT INTO $table VALUES (${values.join(';')})');
       }
     }
 
